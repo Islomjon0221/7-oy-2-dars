@@ -57,7 +57,7 @@ function App() {
         <input ref={name} type="text" className={`rounded bg-black mt-[10px] border-b-4 border-[#079211] focus:outline-none placeholder:text-white`} placeholder='Name...' />
 
         <h3 className='text-bold mt-[40px] text-[25px]'>Age <span className='text-[#079211]'>*</span></h3>
-        <input ref={age} type="text" className='rounded mb-[40px] bg-black mt-[10px] border-b-4 border-[#079211] focus:outline-none placeholder:text-white' placeholder='Age...' />
+        <input ref={age} type="number" className='rounded mb-[40px] bg-black mt-[10px] border-b-4 border-[#079211] focus:outline-none placeholder:text-white' placeholder='Age...' />
 
         <button onClick={handleClick} className='font-bold text-sm outline px-[88px] rounded mb-[40px] py-[5px] bg-[#079211] outline-[#079211] hover:bg-black duration-300'>Save</button>
       </form>
