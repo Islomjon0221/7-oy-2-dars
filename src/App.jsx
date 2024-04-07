@@ -11,6 +11,11 @@ function App() {
 
   function handleClick(e) {
     e.preventDefault()
+    const userinfo = {
+      username: name.current.value,
+      userage: age.current.value
+    }
+    dispatch({type: "ADD", payload: userinfo})
   }
 
   return (
@@ -25,6 +30,26 @@ function App() {
 
         <button onClick={handleClick} className='font-bold text-sm outline px-[88px] rounded mb-[40px] py-[5px] bg-[#079211] outline-[#079211] hover:bg-black duration-300'>Save</button>
       </form>
+
+      <thead className='border-collapse border-2 border-white'>
+        <tr className='border-collapse border-2 border-white'>
+          <th className='border-2 border-white'>T/r</th>
+          <th className='border-2 border-white'>Name</th>
+          <th className='border-2 border-white'>Age</th>
+        </tr>
+      </thead>
+      <tbody className='border-collapse'>
+        <tr className='border-collapse border-2 border-white'>
+          <td className=' border-2 border-white'>1</td>
+          <td className=' border-2 border-white'>Islomjon</td>
+          <td className=' border-2 border-white'>20</td>
+        </tr>
+        <tr className='border-collapse border-2 border-white'>
+          <td className=' border-2 border-white'>2</td>
+          <td className=' border-2 border-white'>Nurmuhammad</td>
+          <td className=' border-2 border-white'>1</td>
+        </tr>
+      </tbody>
     </div>
   )
 }

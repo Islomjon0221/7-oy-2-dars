@@ -6,7 +6,7 @@ function counterReducer(state = defaultState, actions) {
     case "ADD":
       copied = JSON.parse(JSON.stringify(state))
       copied.push(actions.payload) 
-    return copied  
+    return copied
     default:
         return state
   }
